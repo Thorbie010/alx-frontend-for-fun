@@ -15,11 +15,11 @@ def convert_markdown_to_html(input_file, output_file):
         with open(output_file, 'w') as html_file:
             html_file.write(html_content)
 
-        print(f"Conversion successful. HTML saved to {output_file}")
         return 0
 
     except FileNotFoundError:
-        print(f"Error: Missing {input_file}", file=sys.stderr)
+        print("Missing {}".format(input_file), file=sys.stderr)
+
         return 1
 
 if __name__ == "__main__":
