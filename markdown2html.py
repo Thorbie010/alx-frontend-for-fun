@@ -3,6 +3,7 @@
 import sys
 import markdown2
 
+
 if __name__ == "__main__":
     def convert_markdown_to_html(input_file, output_file):
         """function that converts markdown file to html"""
