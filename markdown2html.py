@@ -2,7 +2,7 @@
 """script markdown2html.py that takes an argument 2 strings"""
 
 import sys
-import markdown
+import markdown2
 
 def convert_markdown_to_html(input_file, output_file):
     """function that converts markdown file to html"""
@@ -10,7 +10,7 @@ def convert_markdown_to_html(input_file, output_file):
         with open(input_file, 'r') as md_file:
             markdown_text = md_file.read()
 
-        html_content = markdown.markdown(markdown_text)
+        html_content = markdown2.markdown(markdown_text)
 
         with open(output_file, 'w') as html_file:
             html_file.write(html_content)
