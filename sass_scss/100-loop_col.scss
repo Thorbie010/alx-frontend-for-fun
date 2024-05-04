@@ -1,6 +1,6 @@
 /*MY STYLES*/
 @for $i from 1 through 4 {
   .col-#{$i} {
-    width: #{100 / $i}%;
+    width: percentage(1 / $i); // Calculate width based on the number of columns
   }
 }
