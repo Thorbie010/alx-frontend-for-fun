@@ -1,0 +1,8 @@
+/*MY STYLES*/
+$list_to_sort: john, anna, zoe, kim, felicia, carrie;
+
+@function sort($list) {
+  @return join(sort($list), ', ');
+}
+
+@debug sort($list_to_sort);
